@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 0.5px;
+}
+body{
+    display: flex;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav .logopart h1{
+    color: #7A45F2;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav .logopart img{
+    height: 40px;
+}
+nav .logopart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+    position: absolute;
+    top: 30px;
+} 
+nav{    
+    width: 240px;
+    box-shadow: 0px 0px 2340px 0.1px rgba(205, 205, 205, 0.462);
+    height: 145vh;
+}
+nav .overviewpart{
+    position: absolute;
+    left: 55px;
+    top: 120px;
+}
+nav .overviewpart p{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    height: 30px;
+    margin-top: 10px;
+}
+.overviewpart ul{
+    position: absolute;
+    top: 50px;
+}
+.overviewpart ul li:nth-child(1){
+    color: #9B6BF3;
+}
+.overviewpart ul li:nth-child(1) img{
+    height: 30px;
+    position: relative;
+    left: -5px;
+}
+.overviewpart ul li:nth-child(2) img{
+    height: 25px;
+    position: relative;
+    left: -5px;
+}
+.overviewpart ul li:nth-child(3) img{
+    height: 30px;
+    position: relative;
+    left: -5px;
+}
+.overviewpart ul li:nth-child(4) img{
+    height: 25px;
+    position: relative;
+    left: -8px;
+}
+.overviewpart ul li:nth-child(5) img{
+    height: 22px;
+    position: relative;
+    left: -5px;
+}
+.friendspart{
+    position: absolute;
+    left: 55px;
+    top: 420px;
+}
+.friendspart p{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.friendspart ul li img{
+    height: 28px;
+    margin-right: 10px;
+}
+.friendspart ul{
+    position: absolute;
+    left:-2px;
+    top: 20px;
+    gap: 50px;
+}
+.friendspart ul li div div{
+    font-size: 8px;
+    margin-top: 2px;
+}
+.friendspart ul li{
+    width: 200px;
+    margin-top: 20px;
+}
+.settingspart p{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.settingspart{
+    position: absolute;
+    left:55px;
+    top:120vh;
+}
+.settingspart span{
+    font-size: 18px;
+}
+.settingspart ul li img{
+    height: 25px;
+    position: relative;
+    left: -5px;
+    margin-right: 10px;
+}
+.settingspart ul li:nth-child(1) span{
+    position: absolute;
+    left: 30px;
+}
+.settingspart ul li:nth-child(2) img{
+    height: 30px;
+}
+.settingspart ul li:nth-child(2) span{
+    position: absolute;
+    left: 30px;
+    color: #F44336;
+}
+.midpart{
+    height: 140vh;
+    width: 70%;
+    /* background-color: red; */
+    position: relative;
+}
+.midpart .search{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+}
+.search img:nth-child(1){
+    position: absolute;
+    height: 40px;
+    left: 60px;
+}
+.midpart .search input{
+    width: 81%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 30px 45px;
+    border: 1px solid grey;
+}
+.searchbesideicon{
+    position: relative;
+    height: 50px;
+    margin-left: 20px;
+}
+.onlinecourse{
+    height: 200px;
+    width: 93%;
+    background-color: #7A45F2;
+    position: relative;
+    left: 50px;
+    border-radius: 20px;
+}
+.onlinecourse .imglinear{
+    height: 200px;
+    width: 200px;
+    background: url(imgs/stars\ icon.PNG);
+    float: right;
+    background-size:200px 200px;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+}
+.imglinear::after{
+    content: '';
+    position: absolute;
+    background:linear-gradient(to left ,transparent, #7A45F2 99%);
+    height: 100%;
+    width: 100%;
+}
+.onlinecourse button{
+    height: 35px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(41, 41, 41);
+    color: white;
+    gap: 5px;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+}
+.onlinecourse span{
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-weight: light;
+}
+.onlinecourse button img{
+    height: 25px;
+}
+.onlinecourse h1{
+    color: white;
+    font-size: 25px;
+    width: 370px;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    text-transform: capitalize;
+}
+.notficationspart{
+    height: 65px;
+    width: 270px;
+    position: relative;
+    left: 50px;
+    top: 15px;
+    box-shadow: 10px 10px 1080px 0.1px rgba(128, 128, 128, 0.301) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+}
+.notficationspart img:nth-child(1){
+    width: 50px;
+}
+.notficationspart h4{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.moreicon{
+    position: relative;
+    width: 15px;
+}
+.notficationspartwhole{
+    display: flex;
+    gap: 7px;
+}
+.h2{
+    font-size: 18px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+}
+.boxcourses1{
+    width: 270px;
+    height: 265px;
+    box-shadow: 10px 10px 1080px 0.1px rgba(128, 128, 128, 0.301) ;
+    position: relative;
+    top: 70px;
+    border-radius: 15px;
+}
+.boxcourses1 .boxcourseimg1{
+    height: 100px;
+    width: 250px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-radius: 15px;
+}
+.boxcourses1 div{
+    color: rgb(108, 85, 224);
+    text-transform: uppercase;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    padding: 5px 10px;
+    font-size: 8px;
+    width: 70px;
+    background:rgba(128, 83, 234, 0.284);
+    border-radius: 20px;
+}
+.boxcourses1 p{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.boxcourses1 .boxcourseimg2{
+    position: relative;
+    top:35px;
+    left: 10px;
+    width: 250px;
+}
+.boxcourseimg3{
+    height: 30px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+.boxcourses1 h4{
+    position: relative;
+    left:50px;
+    top: 5px;
+    font-size: 12px;
+}
+.boxcourses1 h5{
+    position: relative;
+    left:50px;
+    top: 10px;
+    font-size: 8px;
+}
+.boxescoursewholes{
+    display: flex;
+    position: relative;
+    left: 50px;
+    gap: 17px;
+}
+.headerspart{
+    font-size: 12px;
+}
+.mentorpartheader{
+    position:relative;
+    top: 85px;
+    left: 50px;
+    font-size: 18px;
+}
+.seemorementorlink{
+    color: rgb(76, 76, 255);
+    position: relative;
+    left: 840px;
+    top: 65px;
+}
+.tablementoringpart{
+    position: relative;
+    left: 50px;
+}
+.tablementoringpart{
+    height: 150px;
+    width: 850px;
+    box-shadow: 10px 10px 1080px 0.1px rgba(128, 128, 128, 0.301) ;
+    border-radius: 10px;
+    position: relative;
+    top:80px;
+}
+.mentoringtablebox1{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+.mentoringtablebox1 img{
+    height: 30px;
+    margin-right: 10px;
+}
+.mentoringtablebox1 h3{
+    font-size: 12px;
+}
+.mentoringtablebox1 span{
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+}
+.mentoringtablebox1 small{
+    color: rgb(108, 85, 224);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 8px;
+    border-radius: 20px;
+    width:80px;
+    height: 20px;
+    background:rgba(128, 83, 234, 0.284);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+.mentoringtablebox1 p{
+    font-size: 11px;
+    position: relative;
+    left:160px;
+    top: 5px;
+}
+.mentoringtablebox1 strong{
+    color: rgb(76, 47, 223);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: 8px;
+    border-radius: 20px;
+    width:120px;
+    height: 20px;
+    background:rgba(91, 27, 240, 0.284);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 220px;
+}
+.tableexcskeloten{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    top: 20px;
+}
+.headerspart{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    display: flex;
+    gap: 120px;
+}
+.righttpart{
+    width: 250px;
+    height: 145vh;
+    box-shadow: -200px -10px 2220px 0.1px rgba(205, 205, 205, 0.278);
+    position: absolute;
+    right: -140px;
+    float: right;
+}
+.righttpart .rightpartheader h1{
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.righttpart .rightpartheader img{
+    height:30px;
+    position: relative;
+    left: 240px;
+    top: -7px;
+}
+.personalinfo img{
+    height: 100px;
+    position: absolute;
+    left: 100px;
+}
+.personalinfo h2{
+    font-size: 16px;
+    position: relative;
+    left: 50px;
+    top: 110px;
+}
+.samepara{
+    position: relative;
+    top: 120px;
+    left: 10px;
+    font-size: 14px;
+    color: grey;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.threeicons{
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    left: 50px;
+    top: 230px;
+}
+.statusbars{
+    position: absolute;
+    height: 130px;
+    top: 300px;
+    left: 30px;
+}
+.mentorsinfo{
+    font-size: 11px;
+    position: absolute;
+    left: 10px;
+    top: 480px;
+}
+.plusicon{
+    position: absolute;
+    left: 230px;
+    top: -10px;
+}
+.personimg{
+    height: 30px;
+}
+.boxmentor{
+    left: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    top: 20px;
+}
+.boxmentor h3{
+    position: absolute;
+    left: 40px;
+    width: 100%;
+    font-size: 11px;
+    top: 7px;
+}
+
+.followbutton{
+    position: absolute;
+    left: 190px;
+}
+.boxmentor div{
+    height: 1px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: rgb(157, 157, 157);
+}
+.boxesmentorinfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.seemorebtn{
+    position: relative;
+    top: 40px;
+    width: 250px;
+    left: 20px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background:rgba(128, 83, 234, 0.284);
+    color: rgb(108, 85, 224);
+}
